@@ -18,6 +18,16 @@ File.open('board.log', mode = 'a') do |file|
 	file.write(string_time + "\t" + string_name + "\t" + string_kakikomi + "\n")
 end
 
-puts "<p>入力された文字をファイルに書き込みました</p>"
-puts '<a href="board.log">board.log</a>'
-puts "<p>現在時刻: " + Time.new.to_s + "</p>"
+#HTMLを表示
+puts "<!DOCTYPE html>"
+puts "<html>"
+puts "<head>"
+puts '	<meta charset="UTF-8">'
+puts "	<title>入力内容を書き込みました | 簡易掲示板</title>"
+puts "</head>"
+puts "<body>"
+puts "	<p>入力内容をファイルに書き込みました</p>"
+puts '	<a href="index.cgi">スレッド表示画面に戻る</a>'
+puts "	<p>現在時刻: " + Time.new.to_s + "</p>"
+puts "</body>"
+puts "</html>"

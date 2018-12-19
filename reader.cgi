@@ -2,7 +2,11 @@
 
 print "Content-type: text/html\n\n"
 
-puts "<html><head><title>簡易リーダー | 簡易掲示板</title></head>"
+puts "<html>"
+puts "<head>"
+puts "<title>簡易リーダー | 簡易掲示板</title>"
+puts '<meta charset="UTF-8";>'
+puts "</head>"
 puts "<body>"
 
 
